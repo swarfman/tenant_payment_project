@@ -1,0 +1,30 @@
+.footer{
+    background-color: grey;
+    width: 100%;
+    color: white;
+}
+.header{
+    background-color: grey;
+    color: white;
+}
+.character{
+    background: black;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.planet{
+    background: black;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.background{
+    background: black;
+}
+.textCustom{
+    overflow-wrap: break-word;
+}
+
+
+/* 
+    General Styles
+*/
