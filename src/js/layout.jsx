@@ -11,13 +11,15 @@ export class Layout extends React.Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<ScrollToTop>
-					<Navbar />
-					<Switch>
-						<Route exact path="/" component={Home} />
-						<Route render={() => <h1>Not found!</h1>} />
-					</Switch>
-				</ScrollToTop>
+				<div className="main">
+					<ScrollToTop>
+						<Navbar />
+						<Switch>
+							<Route exact path="/" component={Home} />
+							<Route render={() => <h1>Not found!</h1>} />
+						</Switch>
+					</ScrollToTop>
+				</div>
 			</BrowserRouter>
 		);
 	}
