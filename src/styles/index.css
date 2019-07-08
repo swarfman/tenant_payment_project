@@ -7,10 +7,8 @@
     background-color: grey;
     color: white;
 }
-.character{
-    background: black;
-    overflow-x: auto;
-    white-space: nowrap;
+.payNowForm{
+    margin: auto;
 }
 .planet{
     background: black;

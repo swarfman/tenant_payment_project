@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 
-export class Home extends React.Component {
+export class Dashboard extends React.Component {
 	constructor() {
 		super();
 		this.state = {};
@@ -22,7 +22,7 @@ export class Home extends React.Component {
 					<hr className="my-4" />
 					<p>For anything else, please contact 561-251-5970</p>
 					<a
-						className="btn btn-primary btn-lg"
+						className="btn btn-primary btn-lg mr-3"
 						href="#"
 						role="button">
 						Pay now
