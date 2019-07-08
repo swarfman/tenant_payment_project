@@ -10,11 +10,34 @@ export class Login extends React.Component {
 		super();
 		this.state = {};
 	}
+	onLoginFunction = e => {
+		e.preventDefault();
+
+		let email = e.target.emailInput.value;
+		if (email === "") {
+			e.target.emailInput.style.background = "red";
+			return false;
+		}
+
+		let password = e.target.passwordInput.value;
+		if (password === "") {
+			e.target.passwordInput.style.background = "red";
+			return false;
+		} else {
+			return true;
+		}
+	};
 
 	render() {
 		return (
-			<form>
+			<form
+				onSubmit={e => {
+					this.onLoginFunction(e);
+				}}>
 				<div className="container-fluid">
+					<div className="row justify-content-center">
+						<h3 className="text-white">Welcome!</h3>
+					</div>
 					<div className="form-group text-white">
 						<label htmlFor="exampleInputEmail1">
 							Email address
@@ -22,7 +45,7 @@ export class Login extends React.Component {
 						<input
 							type="email"
 							className="form-control"
-							id="exampleInputEmail1"
+							id="emailInput"
 							aria-describedby="emailHelp"
 							placeholder="Enter email"
 						/>
@@ -35,7 +58,7 @@ export class Login extends React.Component {
 						<input
 							type="password"
 							className="form-control"
-							id="exampleInputPassword1"
+							id="passwordInput"
 							placeholder="Password"
 						/>
 					</div>

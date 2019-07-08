@@ -80,7 +80,10 @@ export class SignUp extends React.Component {
 			<div className="container-fluid">
 				<div className="row mb-5">
 					<div className="col-10 payNowForm text-white border p-2">
-						<form>
+						<form
+							onSubmit={e => {
+								this.onSignUpFunction(e);
+							}}>
 							<div className="text-center mt-3">
 								<h1>Sign Up in One Click!</h1>
 								<p className="text-muted">
@@ -97,7 +100,6 @@ export class SignUp extends React.Component {
 										className="form-control"
 										id="firstName"
 										placeholder="First Name"
-										value={this.state.first_name}
 									/>
 								</div>
 								<div className="form-group col-md-6">
@@ -109,7 +111,6 @@ export class SignUp extends React.Component {
 										className="form-control"
 										id="lastName"
 										placeholder="Last Name"
-										value={this.state.last_name}
 									/>
 								</div>
 							</div>
@@ -123,7 +124,6 @@ export class SignUp extends React.Component {
 										className="form-control"
 										id="emailSignUp"
 										placeholder="Your Email Here"
-										value={this.state.email}
 									/>
 								</div>
 								<div className="form-group col-6">
@@ -135,7 +135,6 @@ export class SignUp extends React.Component {
 										className="form-control"
 										id="passwordSignUp"
 										placeholder="Create Password"
-										value={this.state.password}
 									/>
 								</div>
 							</div>
@@ -148,7 +147,6 @@ export class SignUp extends React.Component {
 									className="form-control"
 									id="phoneSignUp"
 									placeholder="Phone Number"
-									value={this.state.phone}
 								/>
 							</div>
 							<div className="row justify-content-center">

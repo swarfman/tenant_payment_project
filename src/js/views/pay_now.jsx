@@ -62,7 +62,11 @@ export class PayNow extends React.Component {
 				</div>
 				<div className="row">
 					<div className="col-10 payNowForm border text-white p-2">
-						<form className="ml-5">
+						<form
+							className="ml-5"
+							onSubmit={e => {
+								this.onPaymentFunction(e);
+							}}>
 							<div className="text-center mt-3">
 								<h1>Payment Information</h1>
 							</div>

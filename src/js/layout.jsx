@@ -18,7 +18,7 @@ export class Layout extends React.Component {
 					<Navbar />
 					<Switch>
 						<Route exact path="/dashboard" component={Dashboard} />
-						<Route exact path="/" component={Login} />
+						<Route exact path="/login" component={Login} />
 						<Route exact path="/pay_now" component={PayNow} />
 						<Route exact path="/sign_up" component={SignUp} />
 						<Route render={() => <h1>Not found!</h1>} />
